@@ -1,10 +1,10 @@
 * {
-  margin:  0;
-  padding:  0;
-  border:  0;
-  font-size:  100%;
-  font-family: Inter;
-  letter-spacing: 0%;
+	margin:  0;
+	padding:  0;
+	border:  0;
+	font-size:  100%;
+	font-family: Inter;
+	letter-spacing: 0%;
 }
 
 body {
@@ -28,27 +28,27 @@ body {
 
 
 .text-base {
-  font-family: Inter;
-  color: black;
+	font-family: Inter;
+	color: black;
 }
 
 .small-text {
-  @extend .text-base;
-  line-height:  1rem;
-  font-size:  1rem;
+	@extend .text-base;
+	line-height:  1rem;
+	font-size:  1rem;
 }
 
 .large-text {
-  @extend .text-base;
-  line-height:  1.4rem;
-  font-size:  1.4rem;
+	@extend .text-base;
+	line-height:  1.4rem;
+	font-size:  1.4rem;
 }
 
 .h3 {
-  @extend .text-base;
-  font-size: 40px;
-  font-weight: 500;
-  line-height: 48px;
+	@extend .text-base;
+	font-size: 40px;
+	font-weight: 500;
+	line-height: 48px;
 }
 
 h3{
@@ -60,7 +60,7 @@ h3{
 	box-shadow: 3px 3px 0px 0px black;
 }
 
-  
+
 .img-card {
 	@extend .white-with-hard-shadow;
 	display: flex;
@@ -111,7 +111,7 @@ h3{
 	}
 }
 
-  
+
 .image-container {
 	display: block;
 	margin:  0 auto;
