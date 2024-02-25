@@ -1,0 +1,128 @@
+* {
+  margin:  0;
+  padding:  0;
+  border:  0;
+  font-size:  100%;
+  font-family: Inter;
+  letter-spacing: 0%;
+}
+
+body {
+	background: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin:  100px;
+}
+
+
+
+.generic-row {
+	display: flex;
+	justify-content: space-between;
+}
+
+
+
+
+
+
+.text-base {
+  font-family: Inter;
+  color: black;
+}
+
+.small-text {
+  @extend .text-base;
+  line-height:  1rem;
+  font-size:  1rem;
+}
+
+.large-text {
+  @extend .text-base;
+  line-height:  1.4rem;
+  font-size:  1.4rem;
+}
+
+.h3 {
+  @extend .text-base;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 48px;
+}
+
+h3{
+	@extend .h3;
+}
+
+.white-with-hard-shadow{
+	background-color: white;
+	box-shadow: 3px 3px 0px 0px black;
+}
+
+  
+.img-card {
+	@extend .white-with-hard-shadow;
+	display: flex;
+	flex-direction: column;
+	gap:  10px;
+	min-width:  450px;
+	max-width:  900px;
+	padding: 30px;
+
+	&__author-name{
+		@extend .h3;
+		box-shadow: 0px 3px 0px 0px black;
+	}
+
+
+	&__like-row {
+		@extend .generic-row;
+	}
+}
+
+.button {
+	@extend .h3;
+	
+	width: 254px;
+	height: 48px;
+	color: white;
+	background-color: black;
+
+
+	&__square_icon {
+		@extend .button;
+		width: 48px;
+		height: 48px;
+	}
+
+
+	&:hover {
+		@extend .white-with-hard-shadow;
+		color: black;
+		transition-duration:  0.1s;
+		box-shadow: 3px 3px 0px 0px black;
+	}
+	&:active {
+		@extend .white-with-hard-shadow;
+		color: black;
+		transition-duration:  0.01s;
+		box-shadow: 10px 10px 0px 0px black;
+	}
+}
+
+  
+.image-container {
+	display: block;
+	margin:  0 auto;
+	padding:  10px;
+
+	img {
+		position: static;
+		max-height: 400px;
+
+		flex: none;
+		order: 1;
+		flex-grow: 0;
+	}
+}
